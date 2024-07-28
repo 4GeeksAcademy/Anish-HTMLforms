@@ -1,27 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML FORMS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
-<body class="d-flex justify-content-center align-items-center">
-    <div style="width: 90%;" class="border rounded mt-5" >
-        <div>
-            <h1 class="bg-body-secondary"> Payment Form Example </h1> 
-
+  <body class="d-flex justify-content-center align-items-center">
+    <form style="width: 90%" class="border rounded mt-5">
+      <div>
+        <h1 class="bg-body-secondary">Payment Form Example</h1>
+      </div>
+      <div class= "container-flex">
+        <div class="alert alert-danger" role="alert">
+          Some fields are missing!
         </div>
-        <div>
-          <div class="alert alert-danger" role="alert">
-            Some fields are missing!
+        <div class= "row d-flex">
+          <div class="col-5">
+            <p> <strong> Card # </strong></p>
+           <input type="text" placeholder="XXXXXXXXXXXX" name="Card #" class="w-100" />
+
           </div>
-            <div class="card-info">
-
-            </div>
+          <div class="col-3">
+            <p> <strong> CVC# </strong></p>         
+            <input type="text" placeholder="0000" name="CVC #"class= "w-100" />
+          </div >
+          <div class="col-4">
+            <p> <strong> Amount </strong>
+              </p>
+              
+              <strong>$</strong></span>
+              
+              <input type="text" placeholder="Amount" name="Amount" class="form-control w-100"/>
+          </div>
         </div>
-    </div>
+      </div>
+      <div class="container-flex">
+        <div class="col-6">
+          <div class = "row">
+            <input type="text"  name="First Name"class= "w-100" />
+            <p></p>  
+          </div>
+          <div class = "row"></div>
+          <div class = "row"></div>
+        </div>
+        <div class="col-6">
+          <div class="row"></div>
+          <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
+          <div class="row"></div>
+        </div>
+      </div>
+    </form>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
